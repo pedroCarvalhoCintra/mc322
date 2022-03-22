@@ -3,4 +3,4 @@
 * `247315`
 
 # curso
-* `mc322`
+* `Engenharia de Computação`
