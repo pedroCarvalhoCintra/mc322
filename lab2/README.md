@@ -1,4 +1,4 @@
-# Lab01 - Empréstimos em C
+# Lab02 - Java estruturas
 
-## Notebook 1 sobre empréstimos
+## Notebook 1 
 [Notebook1](notebook/lab02-java-estruturas-ra247315.ipynb)
