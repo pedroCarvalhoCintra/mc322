@@ -8,6 +8,7 @@ public class AppRestaUm {
 
    public static boolean centroTabuleiro(int linha, int coluna){
       /** Função que determina se uma peça é o centro do tabuleiro (inicia nulo '-'). */
+
       if ( linha == 3 && coluna == 3 ) 
          return true;
       else 
@@ -16,6 +17,7 @@ public class AppRestaUm {
 
    public static boolean dentroDoTabuleiro(int linha, int coluna ){
       /** Função que determina se uma peça esta dentro do tabuleiro. */
+
       if ( (coluna >= 2 && coluna <= 4) || (linha >= 2 && linha <= 4 ) ) 
          return true;
       else 
@@ -24,6 +26,7 @@ public class AppRestaUm {
    
    public static int converteParaInt(char posicao){
       /** Função que converte um numero que esta em "char" para um "int" com o valor desse numero. */
+
         int posicaoInt = Character.getNumericValue(posicao);
         return posicaoInt;
    }
@@ -55,6 +58,7 @@ public class AppRestaUm {
 
       // inica o tabuleiro;
       Tabuleiro restaUm = new Tabuleiro(construirPecasInicial());
+      Peca.conectaTabuleiro(restaUm);
       tk.writeBoard("Tabuleiro inicial", restaUm.tabuleiroEmChar());
       
       // passa por cada comando fornecido e realiza a atualização do tabuleiro após cada movimento;
